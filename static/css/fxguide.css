@@ -221,46 +221,50 @@ a {
 }
 
 .fxguide-sidebar nav {
-  display: grid;
-  gap: 20px;
+  display: block;
 }
 
-.fxguide-group {
+.fxguide-category {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.fxguide-group-title {
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #7b8798;
+.fxguide-category > li {
+  margin-bottom: 22px;
+}
+
+.fxguide-section {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #22304E;
   margin-bottom: 10px;
 }
 
-.fxguide-link-list {
+.fxguide-subcategory {
   list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
   display: grid;
-  gap: 8px;
-  padding-left: 0;
+  gap: 6px;
 }
 
-.fxguide-link-list a {
-  text-decoration: none;
+.fxguide-subcategory a {
   display: block;
-  padding: 8px 4px;
-  color: #666;
-  font-size: 13px;
+  padding: 6px 4px;
+  color: #555;
+  font-size: 13.5px;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
-.fxguide-link-list a:hover,
-.fxguide-link-list a:focus {
+.fxguide-subcategory a:hover,
+.fxguide-subcategory a:focus {
   color: #2C5DE5;
 }
 
-.fxguide-link-list a.active,
-.fxguide-link-list li.active > a {
+.fxguide-subcategory li.active a {
   color: #2C5DE5;
   font-weight: 700;
 }
