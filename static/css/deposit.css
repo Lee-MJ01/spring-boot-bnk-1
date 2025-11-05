@@ -502,3 +502,127 @@ footer {
 .list-join-btn:hover {
   background: #4A6FA5;
 }
+
+/* =========================================================
+   외화예금(info1~3) 공통 본문 스타일
+   적용 대상: 외화예금 안내, 당행 외화이체, 해외 외화예금 개설
+   ========================================================= */
+
+/* 본문 전체 레이아웃 */
+.exchange-content {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e2e6ec;
+  border-radius: 10px;
+  padding: 35px 45px;
+  min-height: 500px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 본문 제목 */
+.exchange-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #22304E;
+  border-bottom: 2px solid #E3E7EC;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+}
+
+/* 소개문단 (제목 바로 아래 설명글) */
+.exchange-desc {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* 소제목 (1, 2, 3, 4 항목 제목들) */
+.exchange-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #22304E;
+  margin-top: 38px;
+  margin-bottom: 12px;
+}
+
+/* 리스트 공통 */
+.exchange-content ul,
+.exchange-content ol {
+  margin-left: 22px;
+  margin-bottom: 28px;
+  color: #444;
+  line-height: 1.8;
+}
+
+.exchange-content ul li,
+.exchange-content ol li {
+  margin-bottom: 8px;
+  font-size: 14.5px;
+}
+
+/* 번호 있는 목록 */
+.exchange-content ol {
+  list-style-type: decimal;
+}
+
+/* 강조된 리스트 내 strong 처리 */
+.exchange-content strong {
+  color: #22304E;
+  font-weight: 700;
+}
+
+/* 참고 문구 (※ 안내문) */
+.exchange-note {
+  background: #f9fafc;
+  border: 1px solid #e0e4eb;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.7;
+  margin-top: 30px;
+}
+
+/* 문단 간 구분용 여백 */
+.exchange-content p + h3 {
+  margin-top: 35px;
+}
+
+/* 표 (향후 확장 대비) */
+.exchange-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+.exchange-content th,
+.exchange-content td {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.exchange-content th {
+  background: #f3f6fa;
+  color: #22304E;
+  font-weight: 700;
+}
+
+.exchange-content tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* 반응형 대응 (태블릿 이하) */
+@media screen and (max-width: 768px) {
+  .exchange-content {
+    padding: 25px 20px;
+  }
+  .exchange-content h2 {
+    font-size: 20px;
+  }
+  .exchange-content h3 {
+    font-size: 16px;
+  }
+}
