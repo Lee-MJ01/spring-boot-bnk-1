@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OO은행 메인화면</title>
+  <title>외화 예금 4</title>
   <link rel="stylesheet" href="/static/css/deposit.css">
   
 
@@ -164,98 +164,62 @@
 </header>
 
 
-
-<main class="list-container">
+<main class="view-main">
 
   <!-- 왼쪽 카테고리 -->
   <aside class="list-sidebar">
     <h3 class="list-title">외화예금</h3>
     <ul class="list-category">
-      <li>
-        <a href="#">외화예금상품</a>
-      </li>
-      <li>
-        <a href="#">외화예금안내</a>
-        <ul class="list-subcategory">
-          <li class="active"><a href="#">외화예금안내</a></li>
-          <li><a href="#">당행외화이체</a></li>
-          <li><a href="#">해외외화예금개설</a></li>
-        </ul>
-      </li>
+      <li class="active"><a href="#">외화예금상품</a></li>
+      <li><a href="#">외화예금안내</a></li>
     </ul>
   </aside>
 
-    <!-- 오른쪽 상품 목록 -->
-<section class="exchange-content">
-  <h2>외화예금 안내</h2>
-  <p class="exchange-desc">
-    달러(USD), 유로(EUR), 엔화(JPY) 등 주요 외화를 예치할 수 있는 외화예금 상품입니다.  
-    해외여행, 유학, 수출입, 이주자금 관리 등 다양한 목적의 외화 수요를 가진 고객에게 적합하며,  
-    안정성과 유동성을 동시에 확보할 수 있습니다.
-  </p>
+  <!-- ✅ 오른쪽 메인 콘텐츠 -->
+  <section class="deposit-complete">
+    <div class="complete-container">
 
-  <h3>1. 상품 특징</h3>
-  <ul>
-    <li>USD, EUR, JPY 외에도 파운드(GBP), 호주달러(AUD), 위안화(CNY) 등 다양한 통화 예치 가능</li>
-    <li>입출금 자유형 / 정기예금형 중 선택 가능 — 단기 운용 또는 고금리 예치 목적에 맞춤형 선택</li>
-    <li>인터넷·모바일뱅킹으로 비대면 개설 가능하며, 실시간 환율 확인 및 거래 지원</li>
-    <li>외화송금, 해외 결제, 환전 서비스 등과 연계된 통합 외환 관리 가능</li>
-  </ul>
+      <!-- 상단 완료 안내 -->
+      <div class="complete-top">
+        <div class="complete-icon">
+          <img src="/static/images/character9.png" alt="플로은행 캐릭터">
+        </div>
+        <div class="complete-message">
+          <h2>상품 신규가입이 완료 되었습니다.</h2>
+          <p>상품 가입을 진심으로 감사드립니다.<br>더 나은 서비스와 상품으로 보답하겠습니다.</p>
+        </div>
+      </div>
 
-  <h3>2. 가입 대상 및 방법</h3>
-  <ul>
-    <li>거주자·비거주자 모두 가입 가능 (단, 일부 상품은 거주자 전용)</li>
-    <li>최소 예치금액 및 금리는 상품별·통화별로 상이</li>
-    <li>영업점 방문 또는 모바일·인터넷뱅킹을 통한 간편 개설 가능</li>
-  </ul>
+      <!-- 가입 정보 테이블 -->
+      <table class="complete-table">
+        <tr><th>고객명</th><td>이지민</td></tr>
+        <tr><th>예금명</th><td>외화정기예금</td></tr>
+        <tr><th>신규계좌번호</th><td>104368-11-027105</td></tr>
+        <tr><th>신규통화</th><td>CNY (중국 위안)</td></tr>
+        <tr><th>신규금액</th><td>1.00</td></tr>
+        <tr><th>입금회차</th><td>1</td></tr>
+        <tr><th>예금이율</th><td>0%</td></tr>
+        <tr><th>적용과세</th><td>일반</td></tr>
+        <tr><th>만기일</th><td>2025.12.07</td></tr>
+        <tr><th>예치기간</th><td>1개월</td></tr>
+        <tr><th>출금계좌번호</th><td>104302-04-412952</td></tr>
+        <tr><th>출금통화</th><td>KRW (한국 원)</td></tr>
+        <tr><th>출금적용환율</th><td>205.87</td></tr>
+        <tr><th>출금금액</th><td>205</td></tr>
+        <tr><th>자동연장신청 여부</th><td>아니오</td></tr>
+        <tr><th>자동해지신청 여부</th><td>예</td></tr>
+        <tr><th>계약체결일시</th><td>2025.11.07 13:44:56</td></tr>
+      </table>
 
-  <h3>3. 부가 서비스</h3>
-  <ul>
-    <li>지정환율 알림 서비스 – 고객이 설정한 환율에 도달 시 문자/이메일로 자동 안내</li>
-    <li>자동이체 외화 적립 – 매월 일정 금액을 외화로 전환하여 자동 적립 가능</li>
-    <li>외화예금 고객 대상 환전·송금 수수료 우대 혜택 제공</li>
-  </ul>
+      <!-- 하단 버튼 -->
+      <div class="complete-actions">
+        <a href="/" class="btn-home">메인으로 가기</a>
+      </div>
 
-  <h3>4. 유의사항</h3>
-  <ul>
-    <li>외화예금은 「예금자보호법」 보호대상이 아니며, 환율 변동에 따라 손익이 발생할 수 있습니다.</li>
-    <li>거래 시점 환율과 인출 시점 환율 차이로 인해 원화 환산금액이 변동될 수 있습니다.</li>
-    <li>현금 입출금 시 외화 취급 수수료가 부과될 수 있으며, 일부 통화는 취급이 제한됩니다.</li>
-  </ul>
-
-  <p class="exchange-note">
-    ※ 예금 종류 및 금리는 통화별로 상이하며, 시장 상황에 따라 변동될 수 있습니다.<br>
-    ※ 상품 상세 조건은 영업점 또는 모바일앱 내 상품설명서를 참고하시기 바랍니다.
-  </p>
-</section>
-
-
-
-
-
-
-
+    </div>
+  </section>
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -305,6 +269,7 @@
 </footer>
 
 <script src ="/static/js/index.js"></script>
+<script src ="/static/js/deposit.js"></script>
 
 </body>
 </html>
