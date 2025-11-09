@@ -657,22 +657,7 @@ footer {
   color: var(--text-dark);
 }
 
-/* 반응형 */
-@media (max-width: 1024px) {
-  .mypage-container {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .profile-card {
-    width: 100%;
-    position: static;
-  }
-
-  .account-section {
-    width: 100%;
-  }
-}
 
 
 
@@ -884,35 +869,7 @@ body {
   box-shadow: 0 4px 10px rgba(79, 189, 186, 0.4);
 }
 
-/* ----------------------------
-   반응형 (태블릿/모바일)
----------------------------- */
-@media (max-width: 1024px) {
-  .terms-container {
-    width: 85%;
-    padding: 30px 25px;
-  }
-}
 
-@media (max-width: 600px) {
-  .terms-container {
-    width: 95%;
-    padding: 25px 20px;
-  }
-
-  .terms-title {
-    font-size: 14px;
-  }
-
-  .terms-content {
-    max-height: 160px;
-  }
-
-  .btn-next {
-    width: 100%;
-    font-size: 15px;
-  }
-}
 
 
 /* =========================================================
@@ -1110,34 +1067,8 @@ body {
   box-shadow: 0 4px 10px rgba(79, 189, 186, 0.4);
 }
 
-/* --------------------------------------------
-   반응형
--------------------------------------------- */
-@media (max-width: 1024px) {
-  .open2-account-container {
-    width: 85%;
-  }
-  .open2-account-box {
-    padding: 25px 30px;
-  }
-}
 
-@media (max-width: 600px) {
-  .open2-account-container {
-    width: 95%;
-    margin: 60px auto;
-  }
-  .open2-account-box {
-    padding: 20px;
-  }
-  .open2-limit-input {
-    font-size: 14px;
-  }
-  .open2-btn-next {
-    width: 100%;
-    font-size: 14px;
-  }
-}
+
 /* =========================================================
    입출금통장 개설 (open2-account) - 수정 완료 버전
    ========================================================= */
@@ -1360,38 +1291,25 @@ body {
   box-shadow: 0 4px 10px rgba(79, 189, 186, 0.4);
 }
 
-/* --------------------------------------------
-   반응형
--------------------------------------------- */
-@media (max-width: 1024px) {
-  .open2-account-container {
-    width: 85%;
-  }
-  .open2-account-box {
-    padding: 25px 30px;
-  }
-  .open2-form-group,
-  .open2-limit-section .open2-form-group,
-  .open2-info-box {
-    width: 90%;
-  }
+
+.open2-info-box {
+  margin-bottom: 30px; /* 아래쪽 여백 */
 }
 
-@media (max-width: 600px) {
-  .open2-account-container {
-    width: 95%;
-    margin: 60px auto;
-  }
-  .open2-account-box {
-    padding: 20px;
-  }
-  .open2-limit-input {
-    font-size: 14px;
-  }
-  .open2-btn-next {
-    width: 100%;
-    font-size: 14px;
-  }
+.open2-form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+
+.currency-label {
+  margin-left: 8px;
+  font-weight: 600;
+  color: #2C5DE5; /* 플로뱅크 대표색 (#2C5DE5) */
 }
 
 
@@ -1463,26 +1381,6 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 768px) {
-  .open3-complete-box {
-    padding: 40px 30px;
-    width: 90%;
-  }
-
-  .open3-char-img img {
-    width: 120px;
-  }
-
-  .open3-complete-text h2 {
-    font-size: 20px;
-  }
-
-  .open3-complete-btn {
-    width: 100%;
-    font-size: 15px;
-  }
 }
 
 
