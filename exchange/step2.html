@@ -214,7 +214,14 @@
         <h4>환전예상금액</h4>
         <table class="step2-result-table">
           <tr>
-            <th>원화금액</th>
+            <th>
+              수수료
+              <button type="button" id="couponBtn" class="coupon-btn">쿠폰 적용</button>
+            </th>
+            <td id="result-fee">0.30%</td>
+          </tr>
+          <tr>
+            <th>원화금액(수수료포함)</th>
             <td id="result-won">-</td>
           </tr>
           <tr>
@@ -294,6 +301,26 @@
 
     </form>
   </div>
+
+
+
+  <!--  쿠폰 선택 모달 -->
+    <div id="couponModal" class="coupon-modal" style="display:none;">
+      <div class="coupon-modal-content">
+        <h3>쿠폰 선택</h3>
+        <ul>
+          <li><button class="coupon-option" data-discount="0.05">수수료 5% 할인 쿠폰</button></li>
+          <li><button class="coupon-option" data-discount="0.10">수수료 10% 할인 쿠폰</button></li>
+          <li><button class="coupon-option" data-discount="0.20">수수료 20% 할인 쿠폰</button></li>
+        </ul>
+        <button id="couponClose" class="coupon-close">닫기</button>
+      </div>
+    </div>
+
+
+
+
+
 </main>
 
 
