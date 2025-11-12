@@ -469,3 +469,102 @@
   background-color: #f2f4ff;
   color: #2C5DE5;
 }
+
+
+
+
+/* ================================
+   🔹 오늘의 브리핑 (박스형 컨테이너)
+================================ */
+.briefing-section {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.briefing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 카드형 컨테이너 */
+.briefing-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #fff;
+}
+
+.briefing-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4A6FA5;
+  border-bottom: 2px solid #4A6FA5;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.briefing-box h3::before {
+  content: "📰";
+  font-size: 1.4rem;
+}
+
+.briefing-box h3 span {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.briefing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.briefing-list li {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.briefing-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4A6FA5;
+  font-weight: bold;
+}
+
+.briefing-box .more {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.briefing-box .more a {
+  font-size: 13px;
+  color: #2C5DE5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.briefing-box .more a:hover {
+  color: #1e3ca8;
+  text-decoration: underline;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .briefing-box {
+    padding: 25px 20px;
+  }
+  .briefing-box h3 {
+    font-size: 1.1rem;
+  }
+}
