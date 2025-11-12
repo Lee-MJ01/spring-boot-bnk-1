@@ -30,106 +30,46 @@
 /*=====================================*/
 /*=====================================*/
 
-
-/* =======================================
-   🔹 외환 종류 선택 (카드형 디자인)
-   ======================================= */
 .foreign-section {
-  background: #fafafa;
-  padding: 70px 0;
+  background: #f8f8f8;
+  padding: 60px 0;
+  text-align: center; /* ✅ 모든 foreign-item 내용 가운데 정렬 */
 }
 
 .foreign-container {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  gap: 60px; /* 아이템 간 간격 */
   flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
-.foreign-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* a태그 전체를 카드처럼 스타일 */
 .foreign-item {
-  flex: 1 1 200px;
-  max-width: 210px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 14px;
-  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  text-decoration: none; /* 기본 밑줄 제거 */
-  color: inherit;
-  transition: all 0.25s ease;
-  cursor: pointer;
 }
 
-.foreign-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  border-color: #b7c9e2;
-}
-
-.foreign-item i {
-  font-size: 28px;
-  color: #4A6FA5;
-  margin-bottom: 10px;
-}
-
-.foreign-item h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #22304E;
-  margin-bottom: 8px;
-}
-
-.foreign-item p {
-  font-size: 13px;
-  color: #555;
-  line-height: 1.4;
-}
-
-
-
-/* 링크 효과 */
-.foreign-item h4 a {
-  text-decoration: none;
-  color: inherit;
+/* 링크 글씨 */
+.foreign-item a {
+  color: #000;           /* ✅ 검은색 글씨 */
+  font-size: 20px;       /* ✅ 크게 */
+  font-weight: 700;
+  text-decoration: none; /* 밑줄 제거 */
+  margin-bottom: 6px;
   transition: color 0.2s ease;
 }
-.foreign-item h4 a:hover {
-  color: #4A6FA5;
+
+.foreign-item a:hover {
+  color: #2C5DE5; /* 마우스 올렸을 때 포인트 색상 */
 }
 
-
-/* 반응형 */
-@media (max-width: 900px) {
-  .foreign-container {
-    gap: 20px;
-  }
-  .foreign-item {
-    flex: 1 1 45%;
-  }
+/* 설명문 */
+.foreign-item p {
+  font-size: 14px;      /* ✅ 작게 */
+  color: #666;          /* ✅ 회색 톤 */
+  margin: 0;
 }
-@media (max-width: 500px) {
-  .foreign-item {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-
-
 
 
 /*=====================================*/
